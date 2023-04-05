@@ -99,7 +99,7 @@ class Personel:
         self.name = name.title()
         self.surname = surname.title()
         self.wage = wage
-        self.email = f"{name.lower()}.{surname.lower()}@firmam.com"
+        self.email = f"{''.join(name.split()).lower()}.{surname.lower()}@firmam.com"
 
         Personel.personel_count += 1
 
